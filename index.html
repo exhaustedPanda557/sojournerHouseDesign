@@ -1,0 +1,286 @@
+<!-- for help with the code for the navigation bar, I used the Bootstrap documentation: https://getbootstrap.com/docs/4.0/components/navbar/ -->
+<!-- for dropdown help, I used the Bootstrap documentation: https://getbootstrap.com/docs/4.0/components/dropdowns/-->
+<!-- for text truncating help, I used the Bootstrap documentation https://getbootstrap.com/docs/4.0/utilities/text/-->
+<!-- for help placing two images on top of each other, I used code from https://www.w3docs.com/snippets/css/how-to-position-one-image-on-top-of-another-in-html-css.html-->
+<!-- for help on writing an apostrophe https://www.educative.io/answers/how-to-create-the-apostrophe-symbol-in-html-->
+<!-- for help with adding the video, I used the Bootstrap documentation https://getbootstrap.com/docs/4.0/utilities/embed/ -->
+<!-- for help with flex structure, I used the Bootstrap documentation https://getbootstrap.com/docs/4.0/utilities/flex/-->
+<!-- for help with form input boxes, I used the Bootstrap documentation https://getbootstrap.com/docs/4.0/components/forms/-->
+<!-- logo and photos are from Sojourner House’s website https://sojournerri.org/ -->
+<!--icons (including the quotation icon in the testimony box and excluding the social media icons) are from “Open Iconic Icon Set by Iconduck” found in the Figma Plugins-->
+<!--the social media icons are screenshot from Sojourner House’s website https://sojournerri.org/-->
+
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset ="utf-8">
+        <meta name ="viewport" content ="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href ="bootstrap.css">
+        <link rel="stylesheet" href="style.css">
+        <title>Sojourner House - Redesigned </title>
+    </head>
+    <body>
+        <div class="d-flex container-fluid" style="background-color:rgba(217, 217, 217, 1); justify-content: space-between;">
+            <div>
+              <img src="globe icon.svg" alt="language icon" style="width: 30px; height: 20px; align-self:center; padding-left: 10px;">
+            <a class="dropdown-toggle" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" style="align-self: center; text-align: center;">Select Language</a>
+            </div>
+            <div class="d-flex" style="align-items:flex-end; justify-content: center; padding-right: 10px;">
+                <img src="phone icon.svg" alt="phone icon" style="width: 15px; height: 25px; justify-content: center; margin-left: 6px;align-self: center;">
+                <h6 style="text-transform: uppercase; align-self: center; text-align: center; margin-left: 4px;">Helpline 401-765-3232</h6>
+                <img src="location icon.svg" alt="location icon" style="width: 20px; height: 25px; text-align: center; align-self: center; margin-left: 6px;">
+                <h6 style="align-self:center; text-align:center; margin-left:4px">386 Smith Street, Providence, RI 02906</h6>
+            </div>
+        </div>
+
+          <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <div class="d-flex navbar-brand" id="navbarLogo" style="align-items: baseline;">
+              <div class="d-flex" style="justify-content: center; align-items:center;">
+                  <img src="SH House Logo.svg" width="60px" height="60px" alt="Sojourner House logo image" style="align-self:center;">
+                  <img src="SH Logo Text.svg" height="25px" alt="Sojourner House logo text" style="padding-left: 0.5rem;">
+              </div>
+            </div>
+              <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+            <div class="collapse navbar-collapse justify-content-right" id="navbarTogglerDemo01" style="justify-content: right;">
+              <ul class="d-flex navbar-nav mr-2">
+                <li class="d-flex nav-item dropdown" style="justify-content: space-around; align-items: center;">
+                    <img src="warning icon.svg" alt="Get Help icon" style="width: 10px; height: 10px">
+                  <a class="nav-link dropdown-toggle" href="#" id="navbarGetHelp" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    Get Help
+                  </a>
+                  <div class="dropdown-menu" aria-labelledby="navbarGetHelp">
+                    <a class="dropdown-item" href="#">Item</a>
+                    <a class="dropdown-item" href="#">Item</a>
+                    <div class="dropdown-divider"></div>
+                    <a class="dropdown-item" href="#">Item</a>
+                  </div>
+                </li>
+                <li class="d-flex nav-item dropdown" style="justify-content: space-around; align-items: center;">
+                    <img src="heart icon.svg" alt="Support Us icon" style="width: 10px; height: 10px">
+                  <a class="nav-link dropdown-toggle" href="#" id="navbarSupportUs" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    Support Us 
+                  </a>
+                  <div class="dropdown-menu" aria-labelledby="navbarSupportUs">
+                    <a class="dropdown-item" href="#">Item</a>
+                    <a class="dropdown-item" href="#">Item</a>
+                    <div class="dropdown-divider"></div>
+                    <a class="dropdown-item" href="#">Item</a>
+                  </div>
+                </li>
+                <li class="d-flex nav-item dropdown" style="justify-content: space-around; align-items: center;">
+                    <img src="info icon.svg" alt="About Us icon" style="width: 10px; height: 10px">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarAboutUs" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                      About Us
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarAboutUs">
+                      <a class="dropdown-item" href="#">Item</a>
+                      <a class="dropdown-item" href="#">Item</a>
+                      <div class="dropdown-divider"></div>
+                      <a class="dropdown-item" href="#">Item</a>
+                    </div>
+                  </li>
+              <button class="btn btn-secondary my-2 my-sm-0" type="button" style="margin-left: 1rem;">Donate</button>
+              </ul>
+            </div>
+          </nav>
+
+          <div class="d-flex container-fluid" style="background-color: rgba(68, 37, 128, 1); justify-content: space-between; align-items:baseline;">
+            <h5 class="d-inline-block text-truncate" style="max-width: 30rem">Save the date:  11/18/2022 Royal Garden Party, the 12th Annual Masquerade Ball at The Graduate Providence</h5>
+            <button class="btn btn-light dropdown-toggle" type="button" id="flierDropdown" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Click for the event flier</button>
+          </div>
+
+          <div class="d-flex container-fluid parent" style="margin: 0px; padding: 0px;">
+            <img class="backgroundImage"src="SH ppl lying on floor Medium.jpeg" alt="people lying on the floor smiling" style="width: 100vw; height: 60vh;">
+            <img class="captionImg" src="Main image caption.svg" alt="caption: everyone deserves safe, healthy relationships" style="width: 60%; align-self: center; justify-self: center;">
+          </div>
+
+          <div class="d-flex container-fluid" style="background-color: rgba(68, 37, 128, 1); justify-content: space-between; align-items:baseline;">
+          <h4>The mission of Sojourner House is to promote healthy relationships by providing culturally sensitive support, advocacy, housing, and education for victims and survivors of domestic violence, sexual assault, and human trafficking; and to effect systems change.</h4>
+          </div>
+
+          <div class="d-flex container-fluid">
+            <div class="row" style="padding-top: 1rem;">
+              <div class="col-sm-12 col-md-4 col-lg-4 pb-5">
+                <div class="row" style="padding-top: 1rem; padding-left: 1rem; align-items: center; justify-content: center;">
+                  <img src="Get Help Image Button.svg" alt="Get Help image button" style="justify-self:center; width: 100%;">
+                </div>
+                <div class="row" style="padding-top: 1rem; padding-left: 1rem; align-items: center; justify-content: center;">
+                  <h6 style="text-align: center;">Our advocates assist victims of violence as they navigate their path towards a violence free life. Advocates can make recommendations and connect victims with helpful resources, but most of all, advocates listen. They do not judge, give advice, or pressure victims to make changes before they are ready.</h6>
+                </div>
+                <div class="row" style="padding-top: 1rem; padding-left: 1rem; align-items: center; justify-content: center;">
+                  <button class="btn btn-primary my-2 my-sm-0" type="button">Call or Make an Appointment</button>
+                </div>
+              </div>
+
+              <div class="col-sm-12 col-md-4 col-lg-4 pb-5">
+                <div class="row" style="padding-top: 1rem; padding-left: 1rem; align-items: center; justify-content: center;">
+                  <img src="Support Us Image Button.svg" alt="Support Us image button" style="justify-self:center; width: 100%;">
+                </div>
+                <div class="row" style="padding-top: 1rem; padding-left: 1rem; align-items: center; justify-content: center;">
+                  <h6 style="text-align: center;">When you donate to Sojourner House, your dollars help to fund housing, support services, and advocacy for all those who have experienced domestic violence or sexual abuse.</h6>
+                </div>
+                <div class="row" style="padding-top: 1rem; padding-left: 1rem; align-items: center; justify-content: center;">
+                  <button class="btn btn-primary my-2 my-sm-0" type="button">Make a Donation</button>
+                </div>
+              </div>
+
+
+              <div class="col-sm-12 col-md-4 col-lg-4 pb-5">
+                <div class="row" style="padding-top: 1rem; padding-left: 1rem; align-items: center; justify-content: center;">
+                  <img src="About Us Image Button.svg" alt="About Us image button" style="justify-self:center; width: 100%;">
+                </div>
+                <div class="row" style="padding-top: 1rem; padding-left: 1rem; align-items: center; justify-content: center;">
+                  <h6 style="text-align: center;">Show your commitment to ending domestic violence and sexual abuse forever by joining us at an event, volunteering your time and expertise, or applying for a career with us. We rely every day on our community to support our work.</h6>
+                </div>
+                <div class="row" style="padding-top: 1rem; padding-left: 1rem; align-items: center; justify-content: center;">
+                  
+                </div>
+              </div>
+
+
+            </div>
+
+          </div>
+
+          <div id ="history" class="d-flex flex-column container-fluid" style="background-color: rgba(247, 255, 247, 1); justify-content: center; padding-top: 1rem;padding-bottom: 2rem;">
+            <h3>Sojourner House: Past, Present, Future</h3>
+            <p>Sojourner House&#39;s 45th anniversary video, celebrating our 45 years of lifesaving services and advocacy in Rhode Island.</p>
+            <iframe class="embed-responsive-item" src="https://www.youtube.com/watch?v=gYu1nt0mig8" allowfullscreen></iframe>
+          </div>
+
+
+          <div id="survey" class="d-flex container-fluid" style="background-color: rgba(241, 241, 241, 1); justify-content:center">
+            <div class="row" style="padding-top: 1rem;">
+              <div class="col-sm-12 col-md-6 pb-5">
+                <h3>Online Harassment and Cyber Stalking Survey</h3>
+                <p>Have you ever experienced online harassment and/or cyber-stalking?</p>
+                <p>Sojourner House recently launched an &#39;Online Harassment and Cyber-Stalking Survey&#39; and we are looking for your help with spreading the word about and/or participating in the survey!</p> 
+                <p>Please click on the button below to participate in the survey.</p>
+                <button class="btn btn-primary my-2 my-sm-0" type="button">Take Our Survey Here</button>
+              </div>
+
+              <div class="col-sm-12 col-md-6 pb-5">
+                <img src="survey image.svg" alt="image of someone taking a survey" style="width: 65%; align-self: center; justify-self:center">
+              </div>
+            </div> 
+          </div>
+
+          <div id="testimony" class="d-flex flex-column container-fluid">
+            <h3 style="text-align: left; padding-top: 1rem; padding-left: 1rem;">Testimony</h3>
+            <div class="d-flex testimonyBorder" style="align-items: flex-start;">
+              <img src="quote icon.svg" alt="quote icon" style="margin-left: 1rem; margin-top: 0.5rem;">
+              <p style="text-align: left; margin-left: 0.3rem;">“She fled several times. To different homes and even different states. He would find her every single time. Having children in common made it even more difficult: the threats of custody and deportation were constant. He severely assaulted her and she made her way to us from across the country. We filed her immigration case and found her permanent housing. Her life was finally making sense, and all the pieces were falling into place. Her visa was approved, and after years of separation, her older children were able to join her here as one reunited family. This week she received the one thing she thought was impossible: her legal permanent resident card. I’m incredibly proud of her, of her resilience and strength. She is the single mother of four, and she is doing an amazing job raising kind and respectful children. This is only one case of many, but I get to work with our clients for so long, that I grow fond of them and their victories are also mine.”</p>
+            </div>
+            <p style="text-align: left; margin-left: 2.3rem;">-Sojourner House Staff Member</p>
+          </div>
+
+
+          <div id="newsletter" class="container-fluid" style="background-color:rgba(241, 241, 241, 1); padding-bottom: 3rem;">
+            <h3 style="text-align: left; padding-left: 1rem; padding-top: 2rem;">Newsletter</h3>
+            <div class="row">
+              <div class="col-sm-12 col-md-6 pb-5" style="padding-top: 2rem;">
+                <img src="subscribe section description.svg" alt="description of subscribing to the blog" style="width: 65%; align-self: center;">
+              </div>
+              <div class="col-sm-12 col-md-6 pb-5" style="padding-top: 2rem; text-align: left;">
+                <form style="background-color: rgba(241, 241, 241, 1);">
+                  <div class="form-group">
+                    <label for="firstNameInput">First Name *</label>
+                    <input type="firstName" class="form-control" id="firstNameInput" aria-describedby="firstNameInputBox">
+                  </div>
+                  <div class="form-group">
+                    <label for="lastNameInput">Last Name *</label>
+                    <input type="lastName" class="form-control" id="lastNameInput" aria-describedby="lastNameInputBox">
+                  </div>
+                  <div class="form-group">
+                    <label for="emailInput">Email *</label>
+                    <input type="email" class="form-control" id="emailInput" aria-describedby="emailInputBox">
+                  </div>
+                </form>
+                <button class="btn btn-primary my-2 my-sm-0" type="button">Sign Up</button>
+                <p style="padding-top: 0.5rem;">This site is protected by reCAPTCHA and the Google Privacy Policy and Terms of Service apply.</p>
+              </div>
+            </div>
+
+            <div class="row">
+                <div class="col-sm-12 col-md-6 col-lg-4" style="padding-top: 1rem;">
+                  <div style="background-color: white;padding-left:0.5rem; padding-right:0.5rem;">
+                  <p style="color:rgba(0, 194, 203, 1); text-align: left; padding-top: 1rem;">Sojo News</p>
+                  <h2 style="text-align: left;">FY 2021 Impact Report</h2>
+                  <p style="text-align: left;">June 3, 2022</p>
+                  <p style="padding-bottom: 1rem; text-align: left;">Letter from the Executive Director: There is a common cliché about taking two steps forward and one step back –or, even more dramatically, taking one step forward and two steps back. The idea, of course, is that there are experiences that feel like false starts, or movements toward progress, only then to wind up where…</p>
+                  <button class="btn btn-link vertical-align-left" type="button">Read More --></button>
+                  </div>
+                </div>
+  
+                <div class="col-sm-12 col-md-6 col-lg-4" style="padding-top: 1rem;">
+                  <div style="background-color: white;padding-left:0.5rem; padding-right:0.5rem;">
+                    <img src="bio image.svg" alt="image of Sojo ambassador" style="width: 100%;">
+                  <p style="color:rgba(0, 194, 203, 1); text-align: left;">Press and Media</p>
+                  <h2 style="text-align: left;">Five Questions with Sojo Ambassador Sara Kleiman</h2>
+                  <p style="text-align: left;">August 13, 2021</p>
+                  <p style="padding-bottom: 1rem; text-align: left;">Every person is entitled to be safe and free from domestic and sexual violence. Sojourner House provides invaluable services to the community, which are of even more importance during the pandemic. – Sara Kleiman Why do you support Sojourner House? I support Sojourner House because I fully believe in their mission. Every person is entitled to…</p>
+                  <button class="btn btn-link my-2 my-sm-0" type="button">Read More --></button>
+                  </div>
+                </div>
+                
+                <div class="col-sm-12 col-md-6 col-lg-4" style="padding-top: 1rem;">
+                  <div style="background-color: white; padding-left:0.5rem; padding-right:0.5rem;">
+                  <p style="color:rgba(0, 194, 203, 1); text-align: left; padding-top: 1rem;">Press and Media</p>
+                  <h2 style="text-align: left;">Options RI Magazine: Services for LGBTQ+ Survivors of Domestic Abuse Enhanced During Covid</h2>
+                  <p style="text-align: left;">August 4, 2021</p>
+                  <p style="padding-bottom: 1rem; text-align: left;">Kassie Hawkins, Sojourner House Manager of LGBTQ+ Programs, wrote the following for Options RI Magazine: COVID has been difficult for everyone, but especially LGBTQ+ victims of abuse, many of whom were forced to shelter in places with abusive and unaffirming partners or parents. On top of already existing barriers such as fear of being outed,…</p>
+                  <button class="btn btn-link my-2 my-sm-0" type="button">Read More --></button>
+                  </div>
+                </div>
+
+            </div>
+
+          </div>
+
+
+          <div id="footerInfo" class="d-flex container-fluid infoFooter">
+            <div class="row">
+              <div class="col-sm-12 col-md-3 col-lg-3" style="padding-top: 1rem;">
+                <h3 style="text-align: left;">About</h3>
+                <p style="padding-bottom: 1rem; text-align: left;">For over 45 years, Sojourner House has served thousands of victims and survivors of domestic abuse, sexual violence, and human trafficking. Thanks to our supporters, we are able to offer wraparound services such as support groups, emergency shelter, transitional and permanent supportive housing, sexual health advocacy, and emotional support. We believe that everyone deserves a safe, healthy home, and proudly house all genders.</p>
+              </div>
+
+              <div class="col-sm-12 col-md-3 col-lg-3" style="padding-top: 1rem;">
+                <h3 style="text-align: left;">Mission</h3>
+                <p style="padding-bottom: 1rem; text-align: left;">The mission of Sojourner House is to promote healthy relationships by providing culturally sensitive support, advocacy, housing, and education for victims and survivors of domestic violence, sexual assault, and human trafficking; and to effect systems change.
+                </p>
+              </div>
+
+              <div class="col-sm-12 col-md-3 col-lg-3" style="padding-top: 1rem;">
+                <h3 style="text-align: left;">Contact</h3>
+                <p style="text-align: left;">386 Smith Street, Providence, RI 02908</p>
+                <p style="text-align: left;">Office: 401-861-6191</p>
+                <p style="text-align: left;">Fax: 401-861-6157 </p> 
+                <p style="text-align: left;">Housing Office: (401) 808-6889</p>
+                <p style="text-align: left;">Email: info@sojournerri.org</p>
+                <p style="padding-bottom:1rem; text-align: left;">*Please note that this email account is checked during business hours (Monday – Friday 9:00 a.m. to 5:00 p.m.). If you need an immediate response, please call our 24/7 hotline at 401-765-3232.</p>
+              </div>
+
+              <div class="col-sm-12 col-md-3 col-lg-3" style="padding-top: 1rem;">
+                <h3 style="text-align: left;">Seeking Help?</h3>
+                <p style="text-align: left;">CALL THE HELPLINE: 401-765-3232</p>
+                <p style="text-align: left;">We do not use Caller ID, and we always block our outgoing calls for your safety.</p>
+                <p style="text-align: left;">*If you are in immediate danger and need emergency assistance, call 911</p>
+              </div>
+            </div>  
+          </div>
+
+          <div id="overallFooter" class="d-flex container-fluid" style="background-color: rgba(241, 241, 241, 1); justify-content: space-between;">
+            <div></div>
+            <button class="btn btn-dark my-2 my-sm-0" type="button" style="position: fixed; top:95%; left:0%;"> ↰    Escape</button>
+            <p>2022 Sojourner House</p>
+            <div>
+              <button class="btn btn-danger my-2 my-sm-0" type="button"></button>
+              <button class="btn btn-success my-2 my-sm-0" type="button"></button>
+              <button class="btn btn-info my-2 my-sm-0" type="button"></button>
+            </div>
+          </div>
+
+        </body>
